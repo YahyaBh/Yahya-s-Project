@@ -20,7 +20,7 @@ body {
     z-index: 5;
     position: sticky;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.699);
+    background-color: rgba(20, 18, 18, 0.699);
 }
 
 ul {
@@ -98,8 +98,6 @@ header .overlay {
     }
 }
 
-
-
 form {
     width: 100%;
     background-color: black;
@@ -138,10 +136,6 @@ form #submit:hover {
     color: black;
     cursor: pointer;
 }
-
-
-
-
 
 .flex-container {
     display: flexbox;
