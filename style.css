@@ -4,17 +4,23 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
 
-nav {
-    padding: 40px;
-    display: flex;
+body {
+    scroll-behavior: smooth !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar {
+    padding: 20px 20px;
+    display: flex !important;
     justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    position: sticky;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.699);
 }
 
 ul {
@@ -25,8 +31,20 @@ ul {
 li {
     text-decoration: none;
     list-style: none;
-    margin-left: 20px;
-    font-size: 20px;
+    margin-left: -27px;
+    font-size: 23px;
+    margin-right: 45px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: black;
+    transition: .2s all ease-in;
+}
+
+.nav-link a:hover {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.719);
 }
 
 header {
@@ -69,9 +87,6 @@ header .overlay {
     z-index: 1;
 }
 
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
 @media (pointer: coarse) and (hover: none) {
     header {
@@ -81,4 +96,68 @@ header .overlay {
     header video {
         display: none;
     }
+}
+
+
+
+form {
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+form #email {
+    width: 300px;
+    height: 50px;
+    padding: 0px 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 3px white solid;
+    outline: none;
+}
+
+form #submit {
+    border: 3px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 30px;
+    transition: all .2s ease-in;
+}
+
+
+form #submit:hover {
+    width: 150px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+.flex-container {
+    display: flexbox;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+}
+
+.flex-items {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
 }
